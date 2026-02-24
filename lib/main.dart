@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter First App',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
-        appBar: AppBar(title: const Text('Welcome to Flutter sdsdsdtest')),
+        appBar: AppBar(title: const Text('Welcome to Flutter saadsdsdtest')),
         body: Container(
           width: double.infinity,
           padding: const EdgeInsets.all(12),
