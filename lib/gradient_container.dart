@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dart_test/styled_text.dart';
 
+const startAlignment = Alignment.topLeft;
+const endAlignment = Alignment.bottomRight;
+// final var - will never receive a new value, useful when working with teams
+
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
   //   GradientContainer({key}) : super(key: key)
@@ -24,7 +28,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: StyledText(),
+        child: StyledText('this is StyledText argument input'),
       ),
     );
   }
