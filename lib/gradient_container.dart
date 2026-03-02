@@ -6,7 +6,7 @@ const endAlignment = Alignment.bottomRight;
 // final var - will never receive a new value, useful when working with teams
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.colorOne, this.colorTwo, {super.key});
+  const GradientContainer({super.key, required this.colors});
   //   GradientContainer({key}) : super(key: key)
   //             {named arg}   (key from Stateless widg: key from names arg)
   // put curly braces if you want to use named arguments
@@ -14,18 +14,14 @@ class GradientContainer extends StatelessWidget {
   // or
   //GradientContainer() {}
 
-  final Color colorOne;
-  final Color colorTwo;
+  final List<Color> colors;
 
   @override
   Widget build(context) {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            colorOne,
-            colorTwo,
-          ],
+          colors: colors,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
